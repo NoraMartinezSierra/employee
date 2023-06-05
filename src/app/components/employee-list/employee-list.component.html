@@ -1,0 +1,24 @@
+<div class="container">
+    <h1> {{ titulo }} </h1>
+
+    
+    <table class="table">
+        <thead class="thead-dark">
+          <tr align="center">
+            <th scope="col">ID</th>
+            <th scope="col">Nombres</th>
+            <th scope="col">Salario</th>
+            <th scope="col">Salario anual</th>
+            <th scope="col">Edad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees">
+            <th scope="row">{{employee.id}}</th>
+            <td>{{employee.employee_name}}</td>
+            <td>{{employee.employee_salary}}</td>
+            <td>{{employee.employee_anual_salary}}</td>   
+            <td>{{employee.employee_age}}</td>    
+        </tbody>
+      </table>
+    </div>
